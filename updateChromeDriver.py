@@ -190,9 +190,7 @@ class updateChromeDriver:
 
         _nums = '0123456789.'
 
-        retorno = []
-
-        [retorno.append(_version[i:i+1]) for i, item in enumerate(_version) 
+        retorno = [_version[i:i+1] for i, item in enumerate(_version) 
             if _version[i:i+1] in _nums]
 
         return ''.join(retorno)
